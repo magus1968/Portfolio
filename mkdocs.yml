@@ -1,8 +1,40 @@
-site_name: My MkDocs Material Documentation РУС
+site_name: My MkDocs Material Documentation
 site_url: https://sitename.example
 theme:
   name: material
   language: ru
+  palette:
+
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        # icon: material/brightness-4 # Закомментировал класс допы от James Willett
+        name: Dark mode
+      # primary: green
+      # accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        # icon: material/brightness-7
+        name: Light mode
+      # primary: blue
+      # accent: deep orange
+  features:               # Не делал search и tags. Если захочу — см. Thomas Wilde
+    - navigation.instant
+    - navigation.instant.progress
+#    - navigation.instant.preview   # Почему-то не хочет принимать эту запись
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    # - toc.integrate   # Вообще мне понравилось такая структура - ВЕРНУТЬ [!]
+    - navigation.top
+    - content.code.copy
+
 #
 #  font:   # Пока шрифт менять не буду - неясно как работает с кириллицей
 #    text: Merriweather Sans
@@ -16,22 +48,9 @@ theme:
 #
 #  features:   # Пока не зашла навигация, отменил
 #    - navigation.footer
-  palette:
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark mode
-      primary: green
-      accent: deep purple
 
-    # Light Mode
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: blue
-      accent: deep orange
+plugins:
+  - blog
 
 markdown_extensions:
   - attr_list
@@ -55,11 +74,21 @@ markdown_extensions:
   - pymdownx.details
   - footnotes   # Это отсебятина - добавил не думая в поисках решения траблы с LinkedIn
 
+nav:
+  - Home: index.md
+  - Code Docs:
+    - Python: coding/my-first-python-file.md
+  - Обо мне:   # About
+    - About Me: about/about.md
+    - Childhood: about/childhood.md
+  - Blog:
+    - blog/index.md
+
 extra:
   social:
     - icon: simple/youtube
       link: https://youtube.com/@wizard_me
-#    - icon: simple/linkedin  # Возникла ошибка Error именно из-за отсылки к LinkedIn !
-#      link: https://linkedin.com/in/willettjames
+    - icon: simple/github
+      link: https://github.com/magus1968
 
 copyright: Copyright &copy; 2025 Алексей Смирнов
