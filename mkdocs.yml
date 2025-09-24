@@ -1,4 +1,5 @@
 site_name: My MkDocs Material Documentation
+site_description: My personal Portfolio site using MkDocs Material
 site_url: https://sitename.example
 theme:
   name: material
@@ -78,7 +79,7 @@ nav:
   - Home: index.md
   - Code Docs:
     - Python: coding/my-first-python-file.md
-  - Обо мне:   # About
+  - About:   # Обо мне - можно по русски писать
     - Current Projects: about/projects.md
     - About Me: about/about.md
     - Childhood: about/childhood.md
