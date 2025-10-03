@@ -80,9 +80,9 @@ nav:
   - Code Docs:
     - Python: coding/my-first-python-file.md
   - About:   # Обо мне - можно по русски писать
-    - Current Projects: about/projects.md
     - About Me: about/about.md
     - Childhood: about/childhood.md
+    - Current Projects: about/projects.md
   - Blog:
     - blog/index.md
 
