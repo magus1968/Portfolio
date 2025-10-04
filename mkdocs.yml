@@ -1,11 +1,17 @@
+# Project information
 site_name: My MkDocs Material Documentation
 site_description: My personal Portfolio site using MkDocs Material
-site_url: https://sitename.example
+site_url: https://magus1968.github.io/Portfolio/
+
+# Repository
+repo_name: magus1968/Portfolio
+repo_url: https://github.com/magus1968/Portfolio
+
+# Configuration
 theme:
   name: material
   language: ru
   palette:
-
     # Dark Mode
     - scheme: slate
       toggle:
@@ -14,7 +20,6 @@ theme:
         name: Dark mode
       # primary: green
       # accent: deep purple
-
     # Light Mode
     - scheme: default
       toggle:
@@ -53,11 +58,29 @@ theme:
 #  features:   # Пока не зашла навигация, отменил
 #    - navigation.footer
 
+# Plugins (! Внимание - у разработчика нет плагина glightbox !)
 plugins:
   - search
   - blog
-  - glightbox
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_themed: false
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
 
+# Extensions
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -82,10 +105,15 @@ markdown_extensions:
   - pymdownx.blocks.caption
   - footnotes   # Это отсебятина - добавил не думая в поисках решения траблы с LinkedIn
 
+# Page tree (см. репозиторий разработчика - лучше поймешь структуру)
 nav:
   - Home: index.md
-  - Code Docs:
+  - Getting started:
     - Python: coding/my-first-python-file.md
+    - Adominition: admonitions.md
+    - Content Tabs: content-tabs.md
+    - Diagram: diagram-example.md
+    - Codeblock Example: code-examples.md
   - About:   # Обо мне - можно по русски писать
     - About Me: about/about.md
     - Childhood: about/childhood.md
@@ -93,6 +121,7 @@ nav:
   - Blog:
     - blog/index.md
 
+# Additional configuration
 extra:
   social:
     - icon: simple/youtube
@@ -105,4 +134,5 @@ extra:
       link: https://t.me/mr_magus
       name: Telegram
 
+# Copyright
 copyright: Copyright &copy; 2025 Алексей Смирнов
