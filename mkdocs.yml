@@ -27,6 +27,7 @@ theme:
     - navigation.instant
     - navigation.instant.progress
 #    - navigation.instant.preview   # Почему-то не хочет принимать эту запись
+    - navigation.indexes
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
@@ -35,7 +36,9 @@ theme:
     # - toc.integrate   # Вообще мне понравилось такая структура - ВЕРНУТЬ [!]
     - navigation.top
     - content.code.copy
-
+    - content.code.annotate
+  icon:
+    annotation: material/plus-circle
 #
 #  font:   # Пока шрифт менять не буду - неясно как работает с кириллицей
 #    text: Merriweather Sans
@@ -51,10 +54,13 @@ theme:
 #    - navigation.footer
 
 plugins:
+  - search
   - blog
+  - glightbox
 
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -73,6 +79,7 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+  - pymdownx.blocks.caption
   - footnotes   # Это отсебятина - добавил не думая в поисках решения траблы с LinkedIn
 
 nav:
@@ -90,7 +97,12 @@ extra:
   social:
     - icon: simple/youtube
       link: https://youtube.com/@wizard_me
+      name: YouTube
     - icon: simple/github
       link: https://github.com/magus1968
+      name: GitHub
+    - icon: simple/telegram
+      link: https://t.me/mr_magus
+      name: Telegram
 
 copyright: Copyright &copy; 2025 Алексей Смирнов
