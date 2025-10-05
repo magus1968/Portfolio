@@ -62,23 +62,23 @@ theme:
 plugins:
   - search
   - blog
-  - glightbox:
-      touchNavigation: true
-      loop: false
-      effect: zoom
-      slide_effect: slide
-      width: 100%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - custom-skip-class-name
-      auto_themed: false
-      auto_caption: false
-      caption_position: bottom
-      background: white
-      shadow: true
-      manual: false
+#  - glightbox:                # У разработчика нет плагина glightbox - и я убрал - deploy не производится из-за:
+#      touchNavigation: true   # "ERROR   -  Config value 'plugins': The "glightbox" plugin is not installed"
+#      loop: false
+#      effect: zoom
+#      slide_effect: slide
+#      width: 100%
+#      height: auto
+#      zoomable: true
+#      draggable: true
+#      skip_classes:
+#        - custom-skip-class-name
+#      auto_themed: false
+#      auto_caption: false
+#      caption_position: bottom
+#      background: white
+#      shadow: true
+#      manual: false
 
 # Extensions
 markdown_extensions:
