@@ -108,16 +108,19 @@ markdown_extensions:
 # Page tree (см. репозиторий разработчика - лучше поймешь структуру)
 nav:
   - Home: index.md
-  - Getting started:
-    - Python: coding/my-first-python-file.md
+  - Getting started:   # В корне папки /docs
     - Adominition: admonitions.md
     - Content Tabs: content-tabs.md
     - Diagram: diagram-example.md
-    - Codeblock Example: code-examples.md
+    - Codeblock: code-examples.md
+    - Emojis: emojis.md
   - About:   # Обо мне - можно по русски писать
     - About Me: about/about.md
     - Childhood: about/childhood.md
     - Current Projects: about/projects.md
+  - Cheat Sheets:
+    - Material for MkDocs: cheatsheets/material-for-mkdocs.md
+    - VSCode Extensions: cheatsheets/vscode-extensions.md
   - Blog:
     - blog/index.md
 
