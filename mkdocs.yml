@@ -82,16 +82,26 @@ plugins:
 
 # Extensions
 markdown_extensions:
+  - abbr
+  - admonition
   - attr_list
+  - def_list
+  - footnotes
   - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
@@ -100,10 +110,11 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - admonition
-  - pymdownx.details
-  - pymdownx.blocks.caption
-  - footnotes   # Это отсебятина - добавил не думая в поисках решения траблы с LinkedIn
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
+  
 
 # Page tree (см. репозиторий разработчика - лучше поймешь структуру)
 nav:
@@ -114,13 +125,13 @@ nav:
     - Diagram: diagram-example.md
     - Codeblock: code-examples.md
     - Emojis: emojis.md
+  - Cheat Sheets:
+    - Material for MkDocs: cheatsheets/material-for-mkdocs.md
+    - VSCode Extensions: cheatsheets/vscode-extensions.md
   - About:   # Обо мне - можно по русски писать
     - About Me: about/about.md
     - Childhood: about/childhood.md
     - Current Projects: about/projects.md
-  - Cheat Sheets:
-    - Material for MkDocs: cheatsheets/material-for-mkdocs.md
-    - VSCode Extensions: cheatsheets/vscode-extensions.md
   - Blog:
     - blog/index.md
 
