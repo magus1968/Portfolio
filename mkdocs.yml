@@ -120,6 +120,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting started:   # В корне папки /docs
+    - Пререквизиты: prerequisites.md
     - Adominition: admonitions.md
     - Content Tabs: content-tabs.md
     - Diagram: diagram-example.md
@@ -127,6 +128,7 @@ nav:
     - Emojis: emojis.md
   - Cheat Sheets:
     - Material for MkDocs: cheatsheets/material-for-mkdocs.md
+    - Icons list: cheatsheets/icons.md
     - VSCode Extensions: cheatsheets/vscode-extensions.md
   - About:   # Обо мне - можно по русски писать
     - About Me: about/about.md
