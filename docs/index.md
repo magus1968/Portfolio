@@ -1,11 +1,11 @@
 # Портфолио
 
 Однажды пришла мысль: возможно ли создать профессиональный сайт с Markdown?  
-Так появилось это Портфолио.
+Так появился pet-проект Портфолио.
 
-[:octicons-comment-discussion-16:&nbsp; Start a discussion][discussion board]{ .md-button .md-button--primary }
+[:material-google-drive:&nbsp; Резюме][discussion board]{ .md-button .md-button--primary }
 
-  [discussion board]: https://github.com/squidfunk/mkdocs-material/discussions
+  [discussion board]: https://docs.google.com/document/d/1_EAOQ_sPDLMhPtZC_D7Z2gA8uE-Kz4f0jGi3pmvuOqI/edit?usp=sharing
 
 <div class="grid cards" markdown>
 

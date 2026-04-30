@@ -15,6 +15,7 @@
 - :material-database-outline: `:material-database-outline: # caching`
 - :material-database: `:material-database:`
 - :material-cog-outline: `:material-cog-outline:`
+- :octicons-comment-discussion-16: `:octicons-comment-discussion-16:`
 
 ## Structure
 - :fontawesome-solid-earth-americas: `:fontawesome-solid-earth-americas: # language`
@@ -55,3 +56,5 @@
 - :material-format-list-bulleted: `:material-format-list-bulleted:`
 - :material-email-outline: `:material-email-outline:`
 - :material-email: `:material-email:`
+- :material-google: `:material-google:`
+- :material-google-drive: `:material-google-drive:`
